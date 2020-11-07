@@ -1,0 +1,144 @@
+@media (max-width: 900px){
+    html{
+        font-size: 58.25%;
+    }
+
+    .section-homes {
+        padding: 10rem 0;
+    
+        .home-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer {
+        padding: 5rem 1rem 1rem;
+        background-color: $color-secondary;
+    
+        .nav {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 2rem;
+            justify-items: center;
+            align-content: center;
+            justify-content: center;
+
+            a::before{
+                content: "";
+                width: 5px;
+                height: 5px;
+                vertical-align: middle;
+                margin-right: 1rem;
+                display: inline-block;
+                border-radius: 50%;
+                background-color: #fff;
+
+            }
+    
+            
+        }
+    }
+}
+
+
+@media (max-width: 600px){
+    html{
+        font-size: 50%;
+    }
+
+    .header {
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template: 2rem;
+
+        .header-content {
+            margin-top: 5rem;
+        }
+
+        &-left{
+            .seen-on {
+    
+                .logos-cont {
+    
+    
+                    img {
+    
+                        &:nth-last-of-type(3) {
+                            // display: none;
+                        }
+                    }
+                }
+            }
+        }
+        &-right {
+            padding: 5rem 0;
+            
+        }
+    }
+
+    .features {
+
+        padding: 8rem 0;
+    
+        &-cont {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 5rem 0;
+        }
+
+        .feature {
+
+            &::after{
+                content: "";
+                display: block;
+                margin: 2rem auto;
+                width: 50%;
+                height: 1px;
+                background-color: $color-primary;
+            }
+        }
+        
+    }
+    .story {
+        display: block;
+        height: auto;
+    
+        &-left {
+            margin-bottom: 5rem;
+            // display: none;
+
+            .img-2 {
+                display: none;
+            }
+        }
+    }
+    .section-homes {
+        padding: 10rem 0;
+    
+        .home-container {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+    }
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .footer {
+        padding: 5rem 1rem 1rem;
+        background-color: $color-secondary;
+    
+        .nav {
+            display: grid;
+            grid-template-columns: 1fr;
+    }
+}
+
+
+}
